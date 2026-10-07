@@ -13,14 +13,14 @@
    5. Définir la variable int lastNum;
    6. Boucle for(; lastNum <= limit;)
 
-      1. Boucle for(x = 0; x <= NumColumns || lastNum <= limit; x++)
+      1. Boucle for(x = 0; x < NumColumns \&\& lastNum <= limit; x++)
 
          1. Définir bool isPrime = true;
          2. boucle for(;lastNum <= limit; lastNum++)
 
             1. Boucle for(int n = 2; n < lastNum; n++)
 
-               1. si lastNum%n == 0 
+               1. si lastNum%n == 0
 
                   1. isPrime = false;
                   2. break;
